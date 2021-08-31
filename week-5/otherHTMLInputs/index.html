@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form name="form" action="index.html">
+        <!-- First Name-->
+        <label for="firstName">First Name</label>
+        <input class="userInfo" placeholder="First Name" type="text" id="name">
+        <!-- Last Name-->
+        <label for="lastName">Last Name</label>
+        <input class="userInfo" placeholder="Last Name" type="text" id="last">
+        <br><br>
+        <!-- User Age-->
+        <label for="age">Age</label>
+        <input class="userInfo" placeholder="Age" type="text" id="age">
+        <br><br>
+        <!--First Time Shopper YES or NO-->
+        <p>First Time Shopping with Us:</p>
+        <label for="newShopper">Yes</label>
+        <input type="radio" id="newShopper" name="newShopper" value="Yes">
+        <label for="newShopper">No</label>
+        <input type="radio" id="newShopper1" name="newShopper" value="No">
+        <br><br>
+        <!--user Experience GREAT/AVERAGE/POOR-->
+        <p>Rate your Experience with Us:</p>
+        <select name="userExperience" id="rating">
+            <option value="Rating">Rate Us</option>
+            <option value="Great">Great</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+        </select><br>
+        <!--user Interest in other Products-->
+        <br>Are you Interest: <br>
+        <input type="checkbox"  name="vehicle" value="Bike">
+        <label for="vehicle1"> bike's</label><br>
+        <input type="checkbox"  name="vehicle" value="Car">
+        <label for="vehicle2"> car's</label><br>
+        <input type="checkbox"  name="vehicle" value="Boat">
+        <label for="vehicle3"> boat's</label>
+        <br><br>
+        <!--submit Form-->
+        <button onclick="myFunction()">Submit</button>
+        <script src="index.js"></script>
+    </form>
+</body>
+</html>
