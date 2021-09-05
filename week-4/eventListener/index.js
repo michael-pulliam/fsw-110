@@ -1,40 +1,44 @@
-var button = document.createElement("button");
-document.body.appendChild(button);
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.body.appendChild(button).style.backgroundColor = "black";
-});
-document.addEventListener("mousedown", function(){
-    document.body.appendChild(button).style.backgroundColor = "yellow";
-});
-document.addEventListener("mouseup", function(){
-    document.body.appendChild(button).style.backgroundColor = "blue";
-});
-document.addEventListener("mouseover", function(){
-    document.body.appendChild(button).style.backgroundColor = "green";
-});
-document.addEventListener("wheel", function(){
-    document.body.appendChild(button).style.backgroundColor = "purple";
-});
-document.addEventListener("dblclick", function(){
-    document.body.appendChild(button).style.backgroundColor = "red";
+
+
+
+document.getElementById("id1").addEventListener("mousedown", function() {
+    document.getElementById("id1").style.backgroundColor = "yellow"
+})
+
+document.getElementById("id1").addEventListener("mouseup", function() {
+    document.getElementById("id1").style.backgroundColor = "blue"
+})
+
+document.addEventListener("wheel", function() {
+    document.getElementById("id1").style.backgroundColor = "purple"
+})
+
+document.getElementById("id1").addEventListener("dblclick", function() {
+    document.getElementById("id1").style.backgroundColor = "red"
+})
+
+document.getElementById("id1").addEventListener("mouseover", function() {
+    document.getElementById("id1").style.backgroundColor = "green"
+})
+
+document.addEventListener('DOMContentLoaded',() => {
+    document.getElementById("id1").style.backgroundColor = "black"
 });
 
-document.addEventListener("keypress", function (event) {
-    
+document.addEventListener("keydown", function (event) {
     if (event.key === "r") {
-        document.body.appendChild(button).style.backgroundColor = "red";
+        document.getElementById("id1").style.backgroundColor = "red";
     } else if (event.key === "g") {
-        document.body.appendChild(button).style.backgroundColor = "green";
-    }
-    else if (event.key === "p") {
-        document.body.appendChild(button).style.backgroundColor = "purple";
-    }
-    else if (event.key === "y") {
-        document.body.appendChild(button).style.backgroundColor = "yellow";
-    }
-    else if (event.key === "b") {
-        document.body.appendChild(button).style.backgroundColor = "blue";
+        document.getElementById("id1").style.backgroundColor = "green";
+    }else if (event.key === "b") {
+        document.getElementById("id1").style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "black";
+    }else if (event.key === "y") {
+        document.getElementById("id1").style.backgroundColor = "yellow";
+    }else if (event.key === "p") {
+        document.getElementById("id1").style.backgroundColor = "purple";
+    }else{
+        document.body.style.backgroundColor = "orange";
     }
 });
-
