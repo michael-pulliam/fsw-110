@@ -1,0 +1,67 @@
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 5px; 
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  body{
+    background-color:#ddd;
+}
+footer{
+  text-align: center;
+  margin-top: 100px;
+}
+table{
+  margin-top: 75px;
+  width: 100%;
+  padding: 50px;
+}
+td{
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+}
+th{
+  color: #f2f2f2;
+  background-color: #333;
+  padding: 25px;
+  font-family: roboto slab;
+}
+img{
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+}
+p{
+  text-align:right; 
+  
+}
+
+h1, h2{
+  font-family: cabin;
+}
+.quantity{
+  width: 75px;
+}
+#cart{
+  float: right;
+  margin-right: 20px;
+}
+
+
